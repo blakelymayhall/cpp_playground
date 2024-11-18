@@ -2,12 +2,12 @@ cmake_minimum_required(VERSION 3.10)
 
 project(test_project)
 
-add_subdirectory(../cmake_test1 ../cmake_test1/build)
+add_subdirectory(cmake_test1 cmake_test1/build)
 
-include_directories(../cmake_test1)
+include_directories(cmake_test1)
 
 set(SOURCES
-    ../main.cpp
+    ./main.cpp
 )
 
 add_executable(test_project ${SOURCES})
